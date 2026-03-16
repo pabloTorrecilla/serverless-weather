@@ -33,7 +33,7 @@ def weather_collector(timer: func.TimerRequest) -> None:
     from azure.storage.blob import BlobServiceClient
 
     connection_string = os.environ["AZURE_STORAGE_CONNECTION_STRING"]
-    container_name = os.environ.get("CONTAINER_NAME", "weather-data")
+    container_name = os.environ.get("WEATHER_CONTAINER_NAME", "weather-data")
 
     blob_name = f"weather_{datetime.datetime.utcnow().strftime('%Y-%m-%dT%H-%M-%S')}.json"
 
