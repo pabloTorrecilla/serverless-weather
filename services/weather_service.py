@@ -39,4 +39,3 @@ def get_weather(city: str, latitude: float, longitude: float) -> dict:
     except Exception as e:
         logging.error(f"Error inesperado consultando Open-Meteo: {e}")
         raise
-    
