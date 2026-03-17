@@ -1,1 +1,13 @@
-
+.git
+.venv
+.vscode
+__pycache__
+.pytest_cache
+tests
+*.pyc
+*.pyo
+local.settings.json
+.gitignore
+README.md
+pytest.ini
+.editorconfig
