@@ -16,7 +16,7 @@ def get_weather(city: str, latitude: float, longitude: float) -> dict:
     }
 
     try:
-        response = requests.get(OPEN_METEO_URL, params=params, timeout=10)
+        response = requests.get(OPEN_METEO_URL, params=params, timeout=30)
         response.raise_for_status()
         data = response.json()
 
