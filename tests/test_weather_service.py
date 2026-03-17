@@ -52,3 +52,4 @@ def test_get_weather_raises_on_timeout():
 
         with pytest.raises(req.exceptions.Timeout):
             get_weather("Valencia", 39.4699, -0.3763)
+            

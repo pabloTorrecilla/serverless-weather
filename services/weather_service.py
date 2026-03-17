@@ -3,6 +3,7 @@ import logging
 
 OPEN_METEO_URL = "https://api.open-meteo.com/v1/forecast"
 
+
 def get_weather(city: str, latitude: float, longitude: float) -> dict:
     """
     Consulta la API de Open-Meteo y devuelve los datos meteorológicos actuales.
@@ -38,3 +39,4 @@ def get_weather(city: str, latitude: float, longitude: float) -> dict:
     except Exception as e:
         logging.error(f"Error inesperado consultando Open-Meteo: {e}")
         raise
+    

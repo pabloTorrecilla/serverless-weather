@@ -8,6 +8,7 @@ from services.weather_service import get_weather
 
 app = func.FunctionApp()
 
+
 @app.timer_trigger(
     schedule="0 */15 * * * *",
     arg_name="timer",
